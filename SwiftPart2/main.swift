@@ -60,7 +60,7 @@ print("---\nTask3\n---")
 print("\(student.name) is adult: \(student.isAdult)")
 
 /// Static property minAgeForEnrollment
-print("Minimum age to enroll: \(Person(name: student.name, age: student.age).minAgeForEnrollment)")
+print("Minimum age to enroll: \(Person.minAgeForEnrollment)")
 
 /// Lazy property
 print(student.profileDescription)
