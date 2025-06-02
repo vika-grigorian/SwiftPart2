@@ -15,7 +15,8 @@ class Person {
     var isAdult: Bool {
         return age >= 18
     }
-    let minAgeForEnrollment = 16
+    
+    static let minAgeForEnrollment = 16
 
     lazy var profileDescription: String = {
         return "\(name) is \(age) years old."
@@ -44,7 +45,7 @@ class Student: Person {
     weak var advisor: Professor?
     
     var formattedID: String {
-        return "ID: \(studentID)"
+        return "ID: \(studentID.uppercased())"
     }
     
     /// required initializer
